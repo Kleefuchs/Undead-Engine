@@ -13,6 +13,27 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Header Files\UndeadEngine">
+      <UniqueIdentifier>{e36dff43-2a06-466a-bc67-597d6d6b7d1a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\UndeadEngine">
+      <UniqueIdentifier>{faa9a072-3c05-474f-9c37-8f55590c425d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\UndeadEngine\Window">
+      <UniqueIdentifier>{fd2f0240-f9af-4aa4-8cb3-ec7828901f59}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\UndeadEngine\Window">
+      <UniqueIdentifier>{89606ee3-d424-43fd-9cf4-674fee2c3eaf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\UndeadEngine\Window\WindowData">
+      <UniqueIdentifier>{bc698f29-ad44-42bf-902f-470ca699608e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\UndeadEngine\Window\WindowData">
+      <UniqueIdentifier>{09cbed26-6f6c-45d1-9c25-0c183bcd1ed2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\UndeadEngine\Window\WindowData\WindowFlags">
+      <UniqueIdentifier>{c52c9f1b-7cc8-4271-8fe3-b6ec8f76bfbf}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="framework.h">
@@ -21,13 +42,25 @@
     <ClInclude Include="pch.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="UndeadEngine.h">
+      <Filter>Header Files\UndeadEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="WindowData.h">
+      <Filter>Header Files\UndeadEngine\Window\WindowData</Filter>
+    </ClInclude>
+    <ClInclude Include="Window.h">
+      <Filter>Header Files\UndeadEngine\Window</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Undead-Engine.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="pch.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UndeadEngine.cpp">
+      <Filter>Source Files\UndeadEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="Window.cpp">
+      <Filter>Source Files\UndeadEngine\Window</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
