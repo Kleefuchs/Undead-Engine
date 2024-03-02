@@ -34,6 +34,12 @@
     <Filter Include="Source Files\UndeadEngine\Window\WindowData\WindowFlags">
       <UniqueIdentifier>{c52c9f1b-7cc8-4271-8fe3-b6ec8f76bfbf}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\UndeadEngine\Renderer">
+      <UniqueIdentifier>{3e7c8118-5dc7-48a0-9874-126b2a44d79d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\UndeadEngine\Renderer">
+      <UniqueIdentifier>{97ff2a9c-9a82-4f3b-b190-487715ccc72a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="framework.h">
@@ -51,6 +57,9 @@
     <ClInclude Include="Window.h">
       <Filter>Header Files\UndeadEngine\Window</Filter>
     </ClInclude>
+    <ClInclude Include="Renderer.h">
+      <Filter>Header Files\UndeadEngine\Renderer</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="pch.cpp">
@@ -61,6 +70,9 @@
     </ClCompile>
     <ClCompile Include="Window.cpp">
       <Filter>Source Files\UndeadEngine\Window</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer.cpp">
+      <Filter>Source Files\UndeadEngine\Renderer</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

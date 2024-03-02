@@ -7,10 +7,11 @@
 #ifndef PCH_H
 #define PCH_H
 
-// add headers that you want to pre-compile here
+// add headers that you want to pre-compile 
 #include "framework.h"
 #include "UndeadEngine.h"
 #include "WindowData.h"
 #include "Window.h"
+#include "Renderer.h"
 
 #endif //PCH_H

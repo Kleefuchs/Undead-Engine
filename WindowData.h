@@ -12,7 +12,7 @@ namespace UE {
 	struct WindowData
 	{
 	public:
-		float width = 0, height = 0;
+		int width = 0, height = 0;
 		bool open = false;
 	};
 }
