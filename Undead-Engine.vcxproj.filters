@@ -40,6 +40,24 @@
     <Filter Include="Source Files\UndeadEngine\Renderer">
       <UniqueIdentifier>{97ff2a9c-9a82-4f3b-b190-487715ccc72a}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\UndeadEngine\AdvancedRectangle">
+      <UniqueIdentifier>{88660514-eeba-4926-a29d-8beff8871121}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\UndeadEngine\AdvancedRectangle">
+      <UniqueIdentifier>{4e4db623-920e-4b43-bfd8-d9c2d9c4fb35}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\UndeadEngine\AdvancedVector2">
+      <UniqueIdentifier>{dcdff0f4-1cf5-4297-9e14-8784df67c1c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\UndeadEngine\AdvancedVector2">
+      <UniqueIdentifier>{fcb788a3-6b3e-4d55-b9c1-18e41db75720}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\UndeadEngine\AdvancedColor">
+      <UniqueIdentifier>{b699a342-8802-4f87-afd7-8c12dec941a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AdvancedColor">
+      <UniqueIdentifier>{7eed9278-76df-4f37-80b2-33e51803dcd6}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="framework.h">
@@ -60,6 +78,18 @@
     <ClInclude Include="Renderer.h">
       <Filter>Header Files\UndeadEngine\Renderer</Filter>
     </ClInclude>
+    <ClInclude Include="BaseSprite.h">
+      <Filter>Header Files\UndeadEngine\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="AdvancedRectangle.h">
+      <Filter>Header Files\UndeadEngine\AdvancedRectangle</Filter>
+    </ClInclude>
+    <ClInclude Include="AdvancedVector2.h">
+      <Filter>Header Files\UndeadEngine\AdvancedVector2</Filter>
+    </ClInclude>
+    <ClInclude Include="AdvancedColor.h">
+      <Filter>Header Files\UndeadEngine\AdvancedColor</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="pch.cpp">
@@ -73,6 +103,18 @@
     </ClCompile>
     <ClCompile Include="Renderer.cpp">
       <Filter>Source Files\UndeadEngine\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="BaseSprite.cpp">
+      <Filter>Source Files\UndeadEngine\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="AdvancedRectangle.cpp">
+      <Filter>Source Files\UndeadEngine\AdvancedRectangle</Filter>
+    </ClCompile>
+    <ClCompile Include="AdvancedVector2.cpp">
+      <Filter>Source Files\UndeadEngine\AdvancedVector2</Filter>
+    </ClCompile>
+    <ClCompile Include="AdvancedColor.cpp">
+      <Filter>Source Files\AdvancedColor</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

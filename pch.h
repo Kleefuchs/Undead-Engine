@@ -12,6 +12,9 @@
 #include "UndeadEngine.h"
 #include "WindowData.h"
 #include "Window.h"
+#include "AdvancedRectangle.h"
 #include "Renderer.h"
+#include "BaseSprite.h"
+#include "AdvancedVector2.h"
 
 #endif //PCH_H

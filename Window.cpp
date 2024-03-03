@@ -1,15 +1,18 @@
 #include "pch.h"
 
 UE::Window::Window() {
+	return;
 }
 
 UE::Window::Window(const int width, const int height) {
 	this->setSize(width, height);
+	return;
 }
 
 void UE::Window::init(const char* title) {
 	InitWindow(this->data.width, this->data.height, title);
 	this->data.open = true;
+	return;
 }
 
 void UE::Window::init(const int width, const int height, const char* title) {
@@ -17,15 +20,18 @@ void UE::Window::init(const int width, const int height, const char* title) {
 	this->setSize(width, height);
 	this->setTitle(title);
 	this->data.open = true;
+	return;
 }
 
 void UE::Window::close() {
 	CloseWindow();
 	this->data.open = false;
+	return;
 }
 
 UE::Window::~Window() {
 	this->close();
+	return;
 }
 
 // Size:
