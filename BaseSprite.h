@@ -3,12 +3,14 @@
 
 #include <raylib.h>
 #include "AdvancedRectangle.h"
+#include "AdvancedColor.h"
+#include "AdvancedVector2.h"
 
 namespace UE {
 	class BaseSprite
 	{
 	private:
-		Color tint = WHITE;
+		UE::AdvancedColor tint = WHITE;
 		float rotation = 0;
 		UE::AdvancedVector2 origin = { 0, 0 };
 		UE::AdvancedRectangle source = { 0, 0, 0, 0 };
@@ -48,24 +50,15 @@ namespace UE {
 		/**
 		* Returns the adress of the tint
 		**/
-		Color getTint();
+		UE::AdvancedColor* getTint();
 		/**
 		* Sets the tint
 		**/
-		void setTint(const Color tint);
+		void setTint(const UE::AdvancedColor tint);
 		/**
-		* Returns the adress of the source rectangle
+		* Draws the Sprite
 		**/
-		UE::AdvancedRectangle* getSource();
-		/**
-		* Sets the source rectangle.
-		**/
-		void setSource(const Rectangle source);
-		/**
-		* Sets the source rectangle
-		**/
-		void setSource(const float x, const float y, const float width, const float height);
-		//Objects:
+		void draw();
 	};
 
 }

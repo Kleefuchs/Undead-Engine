@@ -28,10 +28,24 @@ void UE::BaseSprite::setRotation(const float rotation) {
 	return;
 }
 
+// Graphic:
+
 UE::AdvancedVector2* UE::BaseSprite::getOrigin() {
 	return &this->origin;
 }
 
 void UE::BaseSprite::setOrigin(const UE::AdvancedVector2 origin) {
 	this->origin = origin;
+}
+
+UE::AdvancedColor* UE::BaseSprite::getTint() {
+	return &this->tint;
+}
+
+void UE::BaseSprite::setTint(const UE::AdvancedColor tint) {
+	this->tint = tint;
+}
+
+void UE::BaseSprite::draw() {
+	DrawRectanglePro(this->body, this->origin, this->rotation, this->tint);
 }

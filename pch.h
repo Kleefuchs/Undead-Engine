@@ -16,5 +16,6 @@
 #include "Renderer.h"
 #include "BaseSprite.h"
 #include "AdvancedVector2.h"
+#include "AdvancedColor.h"
 
 #endif //PCH_H

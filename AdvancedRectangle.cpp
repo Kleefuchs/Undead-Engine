@@ -11,3 +11,7 @@ UE::AdvancedRectangle::AdvancedRectangle(const float x, const float y, const flo
 	this->height = height;
 	return;
 }
+
+UE::AdvancedRectangle::AdvancedRectangle(const Rectangle rectangle) {
+	*this = rectangle;
+}

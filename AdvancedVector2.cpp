@@ -9,3 +9,7 @@ UE::AdvancedVector2::AdvancedVector2(const float x, const float y) {
 	this->y = y;
 	return;
 }
+
+UE::AdvancedVector2::AdvancedVector2(const Vector2 vector2) {
+	*this = vector2;
+}

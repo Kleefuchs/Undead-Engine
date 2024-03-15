@@ -9,6 +9,7 @@ namespace UE {
 	public:
 		AdvancedVector2();
 		AdvancedVector2(const float x, const float y);
+		AdvancedVector2(const Vector2 vector2);
 	};
 	typedef AdvancedVector2 AVector2;
 }
