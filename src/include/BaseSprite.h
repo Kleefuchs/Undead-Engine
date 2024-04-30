@@ -2,9 +2,9 @@
 #define UE_BASESPRITE_H
 
 #include <raylib.h>
-#include "AdvancedRectangle.h"
-#include "AdvancedColor.h"
-#include "AdvancedVector2.h"
+#include "Advanced/Rectangle.h"
+#include "Advanced/Color.h"
+#include "Advanced/Vector2.h"
 
 namespace UE {
 	class BaseSprite
@@ -56,9 +56,9 @@ namespace UE {
 		**/
 		void setTint(const UE::AdvancedColor tint);
 		/**
-		* Draws the Sprite
+		* Render the Sprite
 		**/
-		void draw();
+		void render();
 	};
 
 }

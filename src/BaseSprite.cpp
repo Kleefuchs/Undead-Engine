@@ -46,6 +46,6 @@ void UE::BaseSprite::setTint(const UE::AdvancedColor tint) {
 	this->tint = tint;
 }
 
-void UE::BaseSprite::draw() {
+void UE::BaseSprite::render() {
 	DrawRectanglePro(this->body, this->origin, this->rotation, this->tint);
 }
