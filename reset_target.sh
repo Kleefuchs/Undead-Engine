@@ -2,7 +2,5 @@ rm -r target
 mkdir target
 cd target
 mkdir lib
-mkdir include
-cd include
-mkdir Advanced
+cp -r ../src/include include
 echo Set up target folder
