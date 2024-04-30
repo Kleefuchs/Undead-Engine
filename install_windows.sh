@@ -1,3 +1,4 @@
+bash uninstall_windows.sh
 mingw_w64_location="C:\w64devkit"
 cd target
 echo ${mingw_w64_location}/x86_64-w64-mingw32/include/UndeadEngine

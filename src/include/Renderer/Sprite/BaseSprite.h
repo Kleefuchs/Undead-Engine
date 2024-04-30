@@ -2,9 +2,9 @@
 #define UE_BASESPRITE_H
 
 #include <raylib.h>
-#include "Advanced/Rectangle.h"
-#include "Advanced/Color.h"
-#include "Advanced/Vector2.h"
+#include "../../Advanced/Rectangle.h"
+#include "../../Advanced/Color.h"
+#include "../../Advanced/Vector2.h"
 
 namespace UE {
 	class BaseSprite

@@ -1,4 +1,5 @@
-#include "include/BaseSprite.h"
+#include "../../include/Renderer/Sprite/BaseSprite.h"
+#include <iostream>
 
 // Position:
 

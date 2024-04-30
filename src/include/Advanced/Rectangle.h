@@ -7,6 +7,7 @@ namespace UE {
 	class AdvancedRectangle : public Rectangle
 	{
 	public:
+		//Constructors:
 		AdvancedRectangle();
 		AdvancedRectangle(const float x, const float y, const float width, const float height);
 		AdvancedRectangle(const Rectangle rectangle);

@@ -1,7 +1,7 @@
 #ifndef UE_WINDOW_H
 #define UE_WINDOW_H
 
-#include "WindowData.h"
+#include "../../GUI/Window/WindowData.h"
 #include <raylib.h>
 
 namespace UE {

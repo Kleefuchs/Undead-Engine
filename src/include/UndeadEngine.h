@@ -3,7 +3,8 @@
 
 #include <raylib.h>
 #include <stdint.h>
-#include "Renderer.h"
+#include "Renderer/Renderer.h"
+#include "GameObject/BaseGameObject.h"
 
 namespace UE {
 	class UndeadEngine {
@@ -12,7 +13,7 @@ namespace UE {
 	public:
 		void init(const uint16_t width, const uint16_t height, const char* title);
 		void run();
-		//Managers:
+		//Renderer:
 		UE::Renderer* getRenderer();
 	};
 }

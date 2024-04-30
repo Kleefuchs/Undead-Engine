@@ -1,4 +1,4 @@
-#include "include/Advanced/Color.h"
+#include "../include/Advanced/Color.h"
 
 UE::AdvancedColor::AdvancedColor() {
 }
@@ -18,5 +18,8 @@ UE::AdvancedColor::AdvancedColor(unsigned char r, unsigned char g, unsigned char
 }
 
 UE::AdvancedColor::AdvancedColor(const Color color) {
-	*this = color;
+	this->r = color.r;
+	this->b = color.b;
+	this->g = color.g;
+	this->a = color.a;
 }

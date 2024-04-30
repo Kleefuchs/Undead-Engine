@@ -1,4 +1,4 @@
-#include "include/Window.h"
+#include "../../include/GUI/Window/Window.h"
 
 UE::Window::Window() {
 	return;

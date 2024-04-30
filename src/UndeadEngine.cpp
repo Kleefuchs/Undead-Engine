@@ -1,6 +1,3 @@
-// Undead-Engine.cpp : Defines the functions for the static library.
-//
-
 #include "include/UndeadEngine.h"
 
 void UE::UndeadEngine::init(const uint16_t width, const uint16_t height, const char* title) {
@@ -15,7 +12,7 @@ void UE::UndeadEngine::run() {
 	}
 }
 
-//Manager:
+//Renderer:
 
 UE::Renderer* UE::UndeadEngine::getRenderer() {
 	return &this->renderer;

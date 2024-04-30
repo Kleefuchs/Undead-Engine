@@ -1,7 +1,7 @@
 #ifndef UE_TEXTUREDSPRITE_H
 #define UE_TEXTUREDSPRITE_H
 
-#include "BaseSprite.h"
+#include "../../Renderer/Sprite/BaseSprite.h"
 
 namespace UE {
 
