@@ -1,4 +1,4 @@
-#include "../pch.h"
+#include "include/Advanced/Rectangle.h"
 
 UE::AdvancedRectangle::AdvancedRectangle() {
 	return;

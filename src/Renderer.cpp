@@ -1,4 +1,4 @@
-#include "pch.h"
+#include "include/Renderer.h"
 
 void UE::Renderer::renderSprites() {
 	for (uint16_t i = 0; i < this->sprites.size(); i++) {

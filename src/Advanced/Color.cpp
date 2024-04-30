@@ -1,4 +1,4 @@
-#include "../pch.h"
+#include "include/Advanced/Color.h"
 
 UE::AdvancedColor::AdvancedColor() {
 }
