@@ -1,3 +1,4 @@
 /.vs/
-EngineLib/x64/Debug/
-x64/
+/objects/
+/target/
+/objects
