@@ -1,13 +1,13 @@
-#include "../../include/Renderer/Sprite/BaseSprite.h"
+#include "../include/Sprite/BaseSprite.h"
 #include <iostream>
 
 // Position:
 
-UE::AdvancedRectangle* UE::BaseSprite::getBody() {
+Rectangle* UE::BaseSprite::getBody() {
 	return &this->body;
 }
 
-void UE::BaseSprite::setBody(const UE::AdvancedRectangle body) {
+void UE::BaseSprite::setBody(const Rectangle body) {
 	this->body = body;
 	return;
 }
@@ -31,19 +31,19 @@ void UE::BaseSprite::setRotation(const float rotation) {
 
 // Graphic:
 
-UE::AdvancedVector2* UE::BaseSprite::getOrigin() {
+Vector2* UE::BaseSprite::getOrigin() {
 	return &this->origin;
 }
 
-void UE::BaseSprite::setOrigin(const UE::AdvancedVector2 origin) {
+void UE::BaseSprite::setOrigin(const Vector2 origin) {
 	this->origin = origin;
 }
 
-UE::AdvancedColor* UE::BaseSprite::getTint() {
+Color* UE::BaseSprite::getTint() {
 	return &this->tint;
 }
 
-void UE::BaseSprite::setTint(const UE::AdvancedColor tint) {
+void UE::BaseSprite::setTint(const Color tint) {
 	this->tint = tint;
 }
 

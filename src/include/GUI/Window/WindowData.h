@@ -1,6 +1,7 @@
 #ifndef UE_WINDOWDATA_H
 #define UE_WINDOWDATA_H
 
+#include "../../FLAGS.h"
 #include <stdint.h>
 
 namespace UE {

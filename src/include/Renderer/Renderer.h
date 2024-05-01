@@ -1,31 +1,55 @@
 #ifndef UE_RENDERER_H
 #define UE_RENDERER_H
 
+#include "../FLAGS.h"
 #include "../GUI/Window/Window.h"
 #include <vector>
-#include "../Renderer/Sprite/BaseSprite.h"
+#include "../Sprite/BaseSprite.h"
+#include "../Scene/Scene.h"
+#include <assert.h>
 
 namespace UE {
 	class Renderer
 	{
 	private:
 		UE::Window window;
-		std::vector<UE::BaseSprite*> sprites;
+		UE::Scene* scene = nullptr;
+		
 		//Rendering:
-		void renderSprites();
+		/**
+		 * Renders the Scene
+		**/
+		void renderScene();
+		/**
+		 * Renders the sprites inside of the Scene
+		**/
+		void renderSprites(std::vector<UE::BaseSprite*>* sprites);
+		/**
+		 * Renders a singular Sprite object
+		**/
+		void renderSprite(UE::BaseSprite* sprite);
 	public:
-		//Sprites:
+		//Scene:
 		/**
-		 * Adds a pointer to a GameObject object which is supposed to be drawn by the Renderer
+		 * DO NOT USE!
+		 * The engine already handles this for you
+		 * Use UndeadEngine::setScene function for this
+		 * Sets the Scene
 		**/
-		void addSprite(UE::BaseSprite* sprite);
+		void _setScene(UE::Scene* scene);
 		/**
-		* Returns the adress of the sprites
+		 * DO NOT USE!
+		 * Use UndeadEngine::getScene function for this
+		 * Returns the adress of the Scene object
 		**/
-		std::vector<UE::BaseSprite*>* getSprites();
+		UE::Scene* _getScene();
 		//Window:
 		UE::Window* getWindow();
 		//Rendering
+		/**
+		 * Renders everything that needs to be rendered
+		 * Also includes logic to check for stuff that does not need to be rendered.
+		**/
 		void render();
 		/**
 		* Returns the adress of the window

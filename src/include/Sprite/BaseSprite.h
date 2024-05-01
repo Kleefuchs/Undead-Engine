@@ -1,30 +1,30 @@
 #ifndef UE_BASESPRITE_H
 #define UE_BASESPRITE_H
 
+#include "../FLAGS.h"
 #include <raylib.h>
-#include "../../Advanced/Rectangle.h"
-#include "../../Advanced/Color.h"
-#include "../../Advanced/Vector2.h"
 
 namespace UE {
+	class UndeadEngine;
 	class BaseSprite
 	{
 	private:
-		UE::AdvancedColor tint = WHITE;
+		Color tint = WHITE;
 		float rotation = 0;
-		UE::AdvancedVector2 origin = { 0, 0 };
-		UE::AdvancedRectangle source = { 0, 0, 0, 0 };
-		UE::AdvancedRectangle body = { 0, 0, 0, 0 };
+		Vector2 origin = { 0, 0 };
+		Rectangle source = { 0, 0, 0, 0 };
+		Rectangle body = { 0, 0, 0, 0 };
 	public:
+		void (*update) (UE::UndeadEngine* engine, UE::BaseSprite) = nullptr;
 		// Position:
 		/**
 		* Returns the adress of the body (on screen)
 		**/
-		UE::AdvancedRectangle* getBody();
+		Rectangle* getBody();
 		/**
 		* Sets the body
 		**/
-		void setBody(const UE::AdvancedRectangle body);
+		void setBody(const Rectangle body);
 		/**
 		* Sets the body
 		**/
@@ -40,21 +40,21 @@ namespace UE {
 		/**
 		* Returns the adress of the origin
 		**/
-		UE::AdvancedVector2* getOrigin();
+		Vector2* getOrigin();
 		/**
 		* Sets origin
 		**/
-		void setOrigin(const UE::AdvancedVector2 origin);
+		void setOrigin(const Vector2 origin);
 
 		// Graphic:
 		/**
 		* Returns the adress of the tint
 		**/
-		UE::AdvancedColor* getTint();
+		Color* getTint();
 		/**
 		* Sets the tint
 		**/
-		void setTint(const UE::AdvancedColor tint);
+		void setTint(const Color tint);
 		/**
 		* Render the Sprite
 		**/

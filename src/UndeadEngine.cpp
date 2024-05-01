@@ -12,6 +12,16 @@ void UE::UndeadEngine::run() {
 	}
 }
 
+//Scene::
+void UE::UndeadEngine::setScene(UE::Scene* scene) {
+	this->scene = scene;
+	this->renderer._setScene(this->scene);
+}
+
+UE::Scene* UE::UndeadEngine::getScene() {
+	return this->scene;
+}
+
 //Renderer:
 
 UE::Renderer* UE::UndeadEngine::getRenderer() {
