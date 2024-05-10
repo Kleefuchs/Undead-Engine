@@ -5,6 +5,7 @@
 #include <raylib.h>
 #include <stdint.h>
 #include "Renderer/Renderer.h"
+#include "Sprite/TexturedSprite.h" //Only in here so the Developer can access it without including it manually.
 
 namespace UE {
 	class UndeadEngine {

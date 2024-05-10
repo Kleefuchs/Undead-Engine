@@ -8,11 +8,10 @@ namespace UE {
 	class UndeadEngine;
 	class BaseSprite
 	{
-	private:
+	protected:
 		Color tint = WHITE;
 		float rotation = 0;
 		Vector2 origin = { 0, 0 };
-		Rectangle source = { 0, 0, 0, 0 };
 		Rectangle body = { 0, 0, 0, 0 };
 	public:
 		void (*update) (UE::UndeadEngine* engine, UE::BaseSprite) = nullptr;
@@ -58,7 +57,7 @@ namespace UE {
 		/**
 		* Render the Sprite
 		**/
-		void render();
+		virtual void render();
 	};
 
 }
