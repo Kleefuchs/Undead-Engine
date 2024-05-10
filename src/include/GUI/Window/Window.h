@@ -58,13 +58,13 @@ namespace UE {
 		**/
 		void setHeight(const int height);
 		/**
-		* Returns the adress of the width
+		* Returns the address of the width
 		* DO NOT TRY TO CHANGE VALUE AS IT WILL NOT AFFECT THE ACTUAL WINDOW!
 		* USE setSize or setWidth/setHeight FOR SUCH MATTERS!
 		**/
 		int* getWidth();
 		/**
-		* Returns the adress of the height
+		* Returns the address of the height
 		* DO NOT TRY TO CHANGE VALUE AS IT WILL NOT AFFECT THE ACTUAL WINDOW!
 		* USE setSize or setWidth/setHeight FOR SUCH MATTERS!
 		**/
@@ -74,7 +74,7 @@ namespace UE {
 		**/
 		void minimize();
 		/**
-		* Returns the reulst of IsWindowMinimized
+		* Returns the result of IsWindowMinimized
 		**/
 		bool isMinimized();
 		/**

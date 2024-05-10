@@ -15,7 +15,7 @@ namespace UE {
 		/**
 		 * Initializes the UndeadEngine
 		**/
-		void init(const uint16_t width, const uint16_t height, const char* title);
+		void init(const uint16_t width, const uint16_t height, UE::Scene* scene, const char* title);
 		/**
 		 * Runs the UndeadEngine GameLoop
 		**/

@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "bfe24ce2eb4ec1a6",
+        "id": "87307253c55678ac",
         "type": "tabs",
         "children": [
           {
-            "id": "b7aa9edbae99d7e0",
+            "id": "764c4c9799aed9d1",
             "type": "leaf",
             "state": {
               "type": "graph",
@@ -138,12 +138,15 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "b7aa9edbae99d7e0",
+  "active": "764c4c9799aed9d1",
   "lastOpenFiles": [
-    "UndeadEngine.md",
-    "Renderer/Renderer.md",
-    "GUI/Window/Window.md",
     "FLAGS.md",
+    "Scene/Scene.md",
+    "Renderer/Renderer.md",
+    "CodeCam/CodeCam2D.md",
+    "CodeCam",
+    "GUI/Window/Window.md",
+    "UndeadEngine.md",
     "2024-05-01.md",
     "Untitled.canvas",
     "Sprite/BaseSprite.md",
@@ -151,7 +154,6 @@
     "GUI/Window/WindowData.md",
     "GUI/Window",
     "GUI",
-    "Scene/Scene.md",
     "Sprite",
     "Scene",
     "Untitled 1",

@@ -15,6 +15,7 @@ namespace UE {
 		UE::Window window;
 		UE::Scene* scene = nullptr;
 		
+		
 		//Rendering:
 		/**
 		 * Renders the Scene
@@ -43,6 +44,8 @@ namespace UE {
 		 * Returns the adress of the Scene object
 		**/
 		UE::Scene* _getScene();
+		//Initialisation:
+		void init(const uint16_t width, const uint16_t height, UE::Scene* scene, const char* title);
 		//Window:
 		UE::Window* getWindow();
 		//Rendering

@@ -1,7 +1,8 @@
 #include "include/UndeadEngine.h"
 
-void UE::UndeadEngine::init(const uint16_t width, const uint16_t height, const char* title) {
-	this->renderer.getWindow()->init(width, height, title);
+void UE::UndeadEngine::init(const uint16_t width, const uint16_t height, UE::Scene* scene, const char* title) {
+	this->renderer.init(width, height, scene, title);
+	this->scene = scene;
 }
 
 void UE::UndeadEngine::run() {

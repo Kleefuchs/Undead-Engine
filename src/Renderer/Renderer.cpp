@@ -1,4 +1,5 @@
 #include "../include/Renderer/Renderer.h"
+#include <iostream>
 
 //Scene:
 
@@ -8,6 +9,19 @@ void UE::Renderer::_setScene(UE::Scene* scene) {
 
 UE::Scene* UE::Renderer::_getScene() {
 	return this->scene;
+}
+
+//Initialisation:
+
+void UE::Renderer::init(const uint16_t width, const uint16_t height, UE::Scene* scene, const char* title) {
+	assert(*scene->getWidth() > 0);
+	assert(width > 0);
+	this->_setScene(scene);
+	UE::CodeCam2D* sceneCam = this->scene->getCam();
+	sceneCam->getCoreCam()->zoom *= (float) ((float) width / (float) *this->scene->getWidth()); //Calculate how much zooming in or out is required for it to be the same size on all resolutions.
+	sceneCam->getCoreCam()->offset.x *= sceneCam->getCoreCam()->zoom; //Apply the same logic to offset.x by using the zoom which is more of a size factor.
+	sceneCam->getCoreCam()->offset.y *= sceneCam->getCoreCam()->zoom; //Same as above with the minor difference of this being for offset.y
+	this->window.init(width, height, title);
 }
 
 //Window:
@@ -36,5 +50,7 @@ void UE::Renderer::renderSprite(UE::BaseSprite* sprite) {
 
 void UE::Renderer::render() {
 	ClearBackground(BLACK);
-	this->renderScene();
+	BeginMode2D(*this->scene->getCam()->getCoreCam());
+		this->renderScene();
+	EndMode2D();
 }
