@@ -5,6 +5,7 @@
 #include <raylib.h>
 #include <stdint.h>
 #include "Renderer/Renderer.h"
+#include "Scene/Scene.h"
 #include "Sprite/TexturedSprite.h" //Only in here so the Developer can access it without including it manually.
 
 namespace UE {
@@ -12,6 +13,19 @@ namespace UE {
 	private:
 		UE::Renderer renderer;
 		UE::Scene* scene;
+		//Update:
+		/*
+		 * Updates all scene related things
+		*/
+		void updateScene(UE::Scene* scene);
+		/*
+		 * Updates all sprites in the vector
+		*/
+		void updateSprites(std::vector<UE::BaseSprite*>* sprites);
+		/*
+		 * Updates everything
+		*/
+		void update();
 	public:
 		/**
 		 * Initializes the UndeadEngine

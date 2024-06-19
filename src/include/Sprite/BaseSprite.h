@@ -14,7 +14,7 @@ namespace UE {
 		Vector2 origin = { 0, 0 };
 		Rectangle body = { 0, 0, 0, 0 };
 	public:
-		void (*update) (UE::UndeadEngine* engine, UE::BaseSprite) = nullptr;
+		void (*update) (UE::UndeadEngine* engine, UE::BaseSprite*) = nullptr;
 		// Position:
 		/**
 		* Returns the adress of the body (on screen)
