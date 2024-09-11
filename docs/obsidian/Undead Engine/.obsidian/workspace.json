@@ -1,18 +1,22 @@
 {
   "main": {
-    "id": "f5c96b720d503317",
+    "id": "0259192fbdf7ad2a",
     "type": "split",
     "children": [
       {
-        "id": "87307253c55678ac",
+        "id": "52033d5f1f91a603",
         "type": "tabs",
         "children": [
           {
-            "id": "764c4c9799aed9d1",
+            "id": "12a9a8d7b956e73a",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Welcome.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -21,15 +25,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "171f9c233eea91a8",
+    "id": "fd9e30126b2c9c3f",
     "type": "split",
     "children": [
       {
-        "id": "67f22897bae4e532",
+        "id": "2b296cfce4ef03d3",
         "type": "tabs",
         "children": [
           {
-            "id": "529951c5592b05f6",
+            "id": "c68d407d892bdd9c",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -39,12 +43,12 @@
             }
           },
           {
-            "id": "91d6658c283a6aff",
+            "id": "f2c4ec13262be7df",
             "type": "leaf",
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#Renderer",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -54,7 +58,7 @@
             }
           },
           {
-            "id": "10dde77416d8aed1",
+            "id": "ce5712326629791d",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -68,19 +72,20 @@
     "width": 300
   },
   "right": {
-    "id": "63b38147baf7ef99",
+    "id": "3ff1683afa970977",
     "type": "split",
     "children": [
       {
-        "id": "52dfb87a94332b9a",
+        "id": "a937c2f2fe354fca",
         "type": "tabs",
         "children": [
           {
-            "id": "ade27aa0492dac9a",
+            "id": "962e53ac0cdcc7be",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Welcome.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -92,18 +97,19 @@
             }
           },
           {
-            "id": "de9fff7794e3c91d",
+            "id": "ea996f2429a1064d",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Welcome.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           },
           {
-            "id": "55a4fed3df47cd9f",
+            "id": "661afabb770c04d3",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -114,11 +120,13 @@
             }
           },
           {
-            "id": "e10f6e4f27fc2c78",
+            "id": "afda4c5cd1a77f25",
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Welcome.md"
+              }
             }
           }
         ]
@@ -138,26 +146,8 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "764c4c9799aed9d1",
+  "active": "12a9a8d7b956e73a",
   "lastOpenFiles": [
-    "FLAGS.md",
-    "Scene/Scene.md",
-    "Renderer/Renderer.md",
-    "CodeCam/CodeCam2D.md",
-    "CodeCam",
-    "GUI/Window/Window.md",
-    "UndeadEngine.md",
-    "2024-05-01.md",
-    "Untitled.canvas",
-    "Sprite/BaseSprite.md",
-    "Sprite/TexturedSprite.md",
-    "GUI/Window/WindowData.md",
-    "GUI/Window",
-    "GUI",
-    "Sprite",
-    "Scene",
-    "Untitled 1",
-    "Renderer",
-    "Undead-En.md"
+    "Welcome.md"
   ]
 }

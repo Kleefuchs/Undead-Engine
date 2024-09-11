@@ -1,2 +1,0 @@
-Inherits [[BaseSprite]]
-Consists of:
