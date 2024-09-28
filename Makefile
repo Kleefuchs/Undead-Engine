@@ -21,6 +21,7 @@ OBJECT_DIR = objects
 # The build target
 TARGET_DIR = target
 TARGET_INCLUDE_DIR = $(TARGET_DIR)/include
+TARGET_LIB_DIR = $(TARGET_DIR)/lib
 TARGET_LIB = $(TARGET_DIR)/lib/libundeadengine.a
 
 source-files := $(shell find $(SRC_DIR)/ -name *.cpp)
@@ -32,6 +33,7 @@ $(object-files): $(OBJECT_DIR)/%.o : $(SRC_DIR)/%.cpp
 
 .PHONY: build-linux
 build-linux: $(object-files)
+	mkdir -p $(TARGET_LIB_DIR)
 	cp -r $(INC_DIR) $(TARGET_DIR)
 	ar rvs $(TARGET_LIB) $^
 
@@ -52,6 +54,7 @@ show-vars:
 	$(info OBJECT_DIR = $(OBJECT_DIR))
 	$(info TARGET_DIR = $(TARGET_DIR))
 	$(info TARGET_INCLUDE_DIR = $(TARGET_INCLUDE_DIR))
+	$(info TARGET_LIB_DIR = $(TARGET_LIB_DIR))
 	$(info TARGET_LIB = $(TARGET_LIB))
 	$(info source_files = $(source-files))
 	$(info object_files = $(object-files))
