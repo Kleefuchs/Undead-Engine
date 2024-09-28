@@ -1,1 +1,0 @@
-ar rcs target/lib/libundeadengine.a objects/*.o #compiles the .o files to a static library
