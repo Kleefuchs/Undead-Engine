@@ -2,7 +2,6 @@
 #define KF_DEBUGGER_HPP
 
 #include "FLAGS.HPP"
-#include <cassert>
 
 /*
 Little Class to help with Debugging

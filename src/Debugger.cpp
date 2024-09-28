@@ -1,5 +1,5 @@
 #include "include/Debugger.hpp"
-
+#include <cassert>
 
 void Debugger::makeFalseAssertion() {
     assert(0 == 1);
