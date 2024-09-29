@@ -1,0 +1,1 @@
+I tried to give the best possible descriptions of what things do in my comments on Linux the installed files should be in **"/usr/local/include/UndeadEngine"**

@@ -1,29 +1,21 @@
 #ifndef KF_DEBUGGER_HPP
 #define KF_DEBUGGER_HPP
 
-#include "FLAGS.HPP"
-
-/*
-Little Class to help with Debugging
-*/
+/*Little Class to help with Debugging*/
 class Debugger {
     private:
     public:
-        /*
-        Makes a false Assertion
-        */
+        #ifndef NDEBUG
+        /*Makes a false assertion*/
         void makeFalseAssertion();
-        /*
-        Makes a true Assertion
-        */
+        #endif
+        #ifndef NDEBUG
+        /*Makes a true assertion*/
         void makeTrueAssertion();
-        /*
-        Returns true when using Debug build
-        */
+        #endif
+        /*Returns true when using Debug build*/
         bool usesDebugBuild();
-        /*
-        Returns true when using a Release build
-        */
+        /*Returns true when using a Release build*/
         bool usesReleaseBuild();
 };
 

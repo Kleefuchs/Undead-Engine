@@ -1,0 +1,1 @@
+Not really a window just holding some data for raylib related stuff and interacting with raylib when needed

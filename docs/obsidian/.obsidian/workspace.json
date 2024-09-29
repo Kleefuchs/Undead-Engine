@@ -10,9 +10,47 @@
           {
             "id": "5fb25b7b6f4af632",
             "type": "leaf",
+            "pinned": true,
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "graph",
+              "state": {},
+              "pinned": true
+            }
+          },
+          {
+            "id": "f5abed71431f1545",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Undead Engine/Components/UndeadEngine.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "2f48e2b72355e647",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Undead Engine/Components/Renderer.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "7000fce11aa2ce36",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Undead Engine/Documentation/The Different Sources for Documentation.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -138,6 +176,25 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "9e7f32fe658726a0",
-  "lastOpenFiles": []
+  "active": "5fb25b7b6f4af632",
+  "lastOpenFiles": [
+    "Undead Engine/Components/UndeadEngine.md",
+    "Undead Engine/Documentation/The Different Sources for Documentation.md",
+    "Undead Engine/Documentation/Code Comments.md",
+    "Undead Engine/Documentation/Obsidian.md",
+    "Undead Engine/Documentation",
+    "Undead Engine/Components/Renderer.md",
+    "Undead Engine/Build/Makefile.md",
+    "Undead Engine/Components/Window.md",
+    "Undead Engine/Build/Include Files.md",
+    "Undead Engine/Build/Untitled.md",
+    "Undead Engine/Build/libundeadengine.a.md",
+    "Undead Engine/Build/Object Files.md",
+    "Undead Engine/Build/Source Files.md",
+    "Undead Engine/Components",
+    "Undead Engine/Untitled.md",
+    "UndeadEngine.md",
+    "Undead Engine/Components/Debugger.md",
+    "Undead Engine/Build"
+  ]
 }

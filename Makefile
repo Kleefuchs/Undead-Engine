@@ -4,8 +4,9 @@ CC = g++
 # compiler flags:
 #  -g     - this flag adds debugging information to the executable file
 #  -Wall  - this flag is used to turn on most compiler warnings
-CFLAGS  = -g -lraylib -Og -Werror -Wpedantic -std=c++2b
-CFLAGS_DEBUG = -g -lraylib -Og -Werror -Wpedantic -std=c++2b
+
+#CFLAGS  = -DNDEBUG -lraylib -O3 -Wall -Werror -Wpedantic -std=c++2b #Release Build CFLAGS
+CFLAGS  = -g -lraylib -Og -Wall -Werror -Wpedantic -std=c++2b -DDEBUG #Debug Build CFLAGS
 
 #Install Locations:
 LINUX_SYS_INCLUDE_DIR = /usr/local/include/UndeadEngine
@@ -31,16 +32,20 @@ $(object-files): $(OBJECT_DIR)/%.o : $(SRC_DIR)/%.cpp
 	mkdir -p $(dir $@) && \
 	$(CC) $(CFLAGS) -c $(patsubst $(OBJECT_DIR)/%.o, $(SRC_DIR)/%.cpp, $@) -o $@ 	
 
-.PHONY: build-linux
 build-linux: $(object-files)
 	mkdir -p $(TARGET_LIB_DIR)
+	$(RM) $(shell find $(TARGET_INCLUDE_DIR) -type f -iregex ".*\.hpp")
 	cp -r $(INC_DIR) $(TARGET_DIR)
 	ar rvs $(TARGET_LIB) $^
 
+.PHONY: show-vars
 install-linux:
+	sudo rm -rf $(LINUX_SYS_INCLUDE_DIR)
+	sudo rm -rf $(LINUX_SYS_TARGET)
 	sudo cp -r $(TARGET_INCLUDE_DIR) $(LINUX_SYS_INCLUDE_DIR)
 	sudo cp $(TARGET_LIB) $(LINUX_SYS_TARGET)
 
+.PHONY: show-vars
 uninstall-linux:
 	sudo rm -r $(LINUX_SYS_INCLUDE_DIR)
 	sudo rm $(LINUX_SYS_TARGET)

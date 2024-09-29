@@ -1,0 +1,1 @@
+You are reading the Obsidian notes right now I think you know what you are doing

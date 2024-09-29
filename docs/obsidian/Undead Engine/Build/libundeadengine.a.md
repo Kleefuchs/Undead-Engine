@@ -1,0 +1,1 @@
+The libundeadengine.a file is the result of all of the [[Object Files]] bundled together. aka linked
