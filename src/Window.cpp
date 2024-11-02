@@ -14,7 +14,7 @@ void Window::updateWindowTitle() {
 
 //Getters and setters:
 
-void Window::setWidth(int16_t width) {
+void Window::setWidth(int width) {
     assert(width > 0);
     this->width = width;
     if(this->running==true) {
@@ -22,11 +22,11 @@ void Window::setWidth(int16_t width) {
     }
 }
 
-int16_t* Window::getWidthPtr() {
+int* Window::getWidthPtr() {
     return &this->width;
 }
 
-void Window::setHeight(int16_t height) {
+void Window::setHeight(int height) {
     assert(height > 0);
     this->height = height;
     if(this->running==true) {
@@ -34,7 +34,7 @@ void Window::setHeight(int16_t height) {
     }
 }
 
-int16_t* Window::getHeightPtr() {
+int* Window::getHeightPtr() {
     return &this->height;
 }
 
@@ -66,7 +66,7 @@ void Window::init() {
     this->running = true;
 }
 
-void Window::init(int16_t widht, int16_t height, std::string title) {
+void Window::init(int width, int height, std::string title) {
     if(this->running==true) {
         return;
     }

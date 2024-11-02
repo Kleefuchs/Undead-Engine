@@ -1,1 +1,1 @@
-Files which are built from the [[Source Files]]
+Files which are built from the [[Source Files]] and they declare what actually happens in the stuff defined in the [[Include Files]]

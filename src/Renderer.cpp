@@ -48,11 +48,6 @@ void Renderer::drawSpritesDebug() {
 #endif
 
 void Renderer::drawSprites() {
-    /*Loops through sprites.
-     this is cursed as hell*/
-    for(std::map<Sprite*, Sprite*>::iterator it = this->sprites->begin(); it != this->sprites->end(); it++) {
-        this->drawSprite(it->first);
-    }
 }
 
 void Renderer::drawNoTexture() {
@@ -65,7 +60,7 @@ void Renderer::drawNoTexture() {
 void Renderer::drawDebug() {
     BeginDrawing();
         ClearBackground(BLACK);
-        //this->drawSpritesDebug();
+        this->drawSpritesDebug();
     EndDrawing();
 }
 #endif

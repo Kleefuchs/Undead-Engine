@@ -52,6 +52,18 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "65358e1aaf4774dd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Undead Engine/Build/Include Files.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ]
       }
@@ -178,18 +190,19 @@
   },
   "active": "5fb25b7b6f4af632",
   "lastOpenFiles": [
-    "Undead Engine/Components/UndeadEngine.md",
+    "Undead Engine/Build/Include Files.md",
+    "Undead Engine/Build/Object Files.md",
+    "Undead Engine/Components/Sprite.md",
+    "Undead Engine/Build/UndeadEngine.hpp.md",
+    "Undead Engine/Build/libundeadengine.a.md",
     "Undead Engine/Documentation/The Different Sources for Documentation.md",
+    "Undead Engine/Components/UndeadEngine.md",
     "Undead Engine/Documentation/Code Comments.md",
     "Undead Engine/Documentation/Obsidian.md",
     "Undead Engine/Documentation",
     "Undead Engine/Components/Renderer.md",
     "Undead Engine/Build/Makefile.md",
     "Undead Engine/Components/Window.md",
-    "Undead Engine/Build/Include Files.md",
-    "Undead Engine/Build/Untitled.md",
-    "Undead Engine/Build/libundeadengine.a.md",
-    "Undead Engine/Build/Object Files.md",
     "Undead Engine/Build/Source Files.md",
     "Undead Engine/Components",
     "Undead Engine/Untitled.md",

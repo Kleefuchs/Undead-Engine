@@ -4,7 +4,6 @@
 #include "Debugger.hpp"
 #include "Renderer.hpp"
 #include "Window.hpp"
-#include <cstdint>
 #include <string>
 
 class UndeadEngine {
@@ -53,7 +52,7 @@ class UndeadEngine {
 
         My Advice is to create a window with this then load an image for you loading screen and then load the rest while displaying the image.
         One approach would be to have a static image and then just load everything in the main thread or try multithreading.*/
-        void init(int16_t width, int16_t height, std::string title);
+        void init(int width, int height, std::string title);
 };
 
 #endif

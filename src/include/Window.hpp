@@ -8,8 +8,8 @@
 One of the most anying thing you'll have to deal with*/
 class Window {
     private:
-        int16_t width = 0;
-        int16_t height = 0;
+        int width = 0;
+        int height = 0;
         std::string title = "undefined";
         bool running = false;
 
@@ -22,16 +22,16 @@ class Window {
         //Getters and setters:
 
         /*Sets the width to the specified value*/
-        void setWidth(int16_t width);
+        void setWidth(int width);
 
         /*Returns a pointer to the width*/
-        int16_t* getWidthPtr();
+        int* getWidthPtr();
 
         /*Sets the height to the specified value*/
-        void setHeight(int16_t height);
+        void setHeight(int height);
 
         /*Returns a pointer to the height*/
-        int16_t* getHeightPtr();
+        int* getHeightPtr();
 
         /*Sets the width to the specified value
         Will fail in DEBUG Build if the title is too long*/
@@ -53,7 +53,7 @@ class Window {
 
         /*Initializes the raylib window
         Will overwrite the previously set values*/
-        void init(int16_t widht, int16_t height, std::string title);
+        void init(int width, int height, std::string title);
 };
 
 #endif

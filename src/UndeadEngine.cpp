@@ -1,5 +1,4 @@
 #include "include/UndeadEngine.hpp"
-#include <cstdint>
 #include <string>
 
 Debugger* UndeadEngine::getDebuggerPtr() {
@@ -38,7 +37,7 @@ void UndeadEngine::run() {
 
 //Init:
 
-void UndeadEngine::init(int16_t width, int16_t height, std::string title) {
+void UndeadEngine::init(int width, int height, std::string title) {
     /*Opens a window and gives it some user defined data
     Will also start sound related stuff and some Components of the Engine*/
     this->window.init(width, height, title);
